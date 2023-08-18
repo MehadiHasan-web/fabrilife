@@ -19,220 +19,301 @@
   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/style.css">
+
+  <!-- navbar css -->
+  <link rel="stylesheet" href="assets/css/navbar.css">
+
 </head>
 <body>
 
-<!-- navbar start -->
-<nav class="navbar navbar-expand-lg bg-body-tertiary shadow">
-  <div class="container-fluid px-3">
-    <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"><svg style="width: 30px;" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-        <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
-      </svg>
-      </span>
-    </button>
-    <div class="d-flex me-4 d-none d-md-block  d-lg-none">
-      <a class="btn btn-dark btn-sm me-2 " href="#" role="button"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6" style="width: 30;">
-        <path stroke-linecap="round" stroke-linejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z" />
-      </svg></a>
-      
-      <a type="button" class="btn btn-link btn-sm me-2 position-relative">
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6"  style="width: 30;">
-          <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 00-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 00-16.536-1.84M7.5 14.25L5.106 5.272M6 20.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm12.75 0a.75.75 0 11-1.5 0 .75.75 0 011.5 0z" />
-        </svg>
-        <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger " style="font-size: 5px;">
-          99+                
-        </span>
-      </a>
-    </div>
-    <a class="navbar-brand" href="#"><img src="fabrilife.svg" alt="" style="width: 200px;"></a>
-    
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        <li class="nav-item dropdown position-static">
-          <a class="nav-link dropdown-toggle text-dark ms-3" href="#" id="navbarDropdown" role="button"
-            data-bs-toggle="dropdown" aria-expanded="false">
-            Shop
-          </a>
-          <!-- Dropdown menu -->
-          <div class="dropdown-menu w-75 mt-0 ms-5 mt-2 shadow" aria-labelledby="navbarDropdown" style="border-top-left-radius: 0;border-top-right-radius: 0;">
-            <div class="container">
-              <div class="row my-4">
-                <div class="col-md-6 col-xl-3 mb-3 mb-xl-0">
-                  <div class="pt-2">
-                    <p class="text-uppercase font-weight-bold">
-                      Explicabo voluptas
-                    </p>
-                    <div class="bg-image hover-overlay shadow-1-strong rounded ripple mb-4"
-                      data-mdb-ripple-color="light">
-                      <img src="https://mdbcdn.b-cdn.net/img/new/fluid/city/113.webp" class="img-fluid" />
-                      <a href="#!">
-                        <div class="mask" style="background-color: rgba(251,251,251,0.15);"></div> 
-                      </a>
-                    </div>
-                    <div class="d-flex justify-content-between">
-                      <a href="" class="text-info"><i class="fas fa-plane pe-1"></i>Travels</a>
-                      <p><u>15.07.2020</u></p>
-                    </div>
-                    <a href="" class="text-dark">
-                      <h5>This is title of the news</h5>
-                      <p>
-                        Lorem ipsum dolor sit amet
-                        consectetur adipisicing elit.
-                        Odit, iste aliquid. Sed id nihil
-                        magni, sint vero provident esse
-                        numquam perferendis ducimus dicta
-                        adipisci iusto nam temporibus modi
-                        animi laboriosam?
-                      </p>
-                    </a>
-                  </div>
-                </div>
-                <div class="col-md-6 col-xl-3 mb-3 mb-xl-0">
-                  <div class="pt-2">
-                    <p class="text-uppercase font-weight-bold">
-                      Explicabo voluptas
-                    </p>
-                    <a href="" class="text-dark">
-                      <div class="row mb-4 border-bottom pb-2">
-                        <div class="col-3">
-                          <img src="https://mdbcdn.b-cdn.net/img/new/standard/city/041.webp"
-                            class="img-fluid shadow-1-strong rounded" alt="Hollywood Sign on The Hill" />
-                        </div>
-                        <div class="col-9">
-                          <p class="mb-2">
-                            <strong>Lorem ipsum dolor sit
-                              amet</strong>
-                          </p>
-                          <p><u>15.07.2020</u></p>
-                        </div>
-                      </div>
-                    </a>
-                    <a href="" class="text-dark">
-                      <div class="row mb-4 border-bottom pb-2">
-                        <div class="col-3">
-                          <img src="https://mdbcdn.b-cdn.net/img/new/standard/city/042.webp"
-                            class="img-fluid shadow-1-strong rounded" alt="Palm Springs" />
-                        </div>
-                        <div class="col-9">
-                          <p class="mb-2">
-                            <strong>Lorem ipsum dolor sit
-                              amet</strong>
-                          </p>
-                          <p><u>15.07.2020</u></p>
-                        </div>
-                      </div>
-                    </a>
-                    <a href="" class="text-dark">
-                      <div class="row mb-4 border-bottom pb-2">
-                        <div class="col-3">
-                          <img src="https://mdbcdn.b-cdn.net/img/new/standard/city/043.webp"
-                            class="img-fluid shadow-1-strong rounded" alt="Los Angeles Skyscrapers" />
-                        </div>
-                        <div class="col-9">
-                          <p class="mb-2">
-                            <strong>Lorem ipsum dolor sit
-                              amet</strong>
-                          </p>
-                          <p><u>15.07.2020</u></p>
-                        </div>
-                      </div>
-                    </a>
-                    <a href="" class="text-dark">
-                      <div class="row mb-4 border-bottom pb-2">
-                        <div class="col-3">
-                          <img src="https://mdbcdn.b-cdn.net/img/new/standard/city/044.webp"
-                            class="img-fluid shadow-1-strong rounded" alt="Skyscrapers" />
-                        </div>
-                        <div class="col-9">
-                          <p class="mb-2">
-                            <strong>Lorem ipsum dolor sit
-                              amet</strong>
-                          </p>
-                          <p><u>15.07.2020</u></p>
-                        </div>
-                      </div>
-                    </a>
-                  </div>
-                </div>
-                <div class="col-md-6 col-xl-3 mb-3 mb-md-0">
-                  <div class="list-group list-group-flush">
-                    <p class="mb-0 list-group-item text-uppercase font-weight-bold">
-                      Iste quaerato
-                    </p>
-                    <a href="" class="list-group-item list-group-item-action"><i
-                        class="fas fa-caret-right pe-2"></i>Cras justo odio</a>
-                    <a href="" class="list-group-item list-group-item-action"><i
-                        class="fas fa-caret-right pe-2"></i>Est iure</a>
-                    <a href="" class="list-group-item list-group-item-action"><i
-                        class="fas fa-caret-right pe-2"></i>Praesentium</a>
-                    <a href="" class="list-group-item list-group-item-action"><i
-                        class="fas fa-caret-right pe-2"></i>Laboriosam</a>
-                    <a href="" class="list-group-item list-group-item-action"><i
-                        class="fas fa-caret-right pe-2"></i>Dolor sit</a>
-                    <a href="" class="list-group-item list-group-item-action"><i
-                        class="fas fa-caret-right pe-2"></i>Amet consectetur</a>
-                    <a href="" class="list-group-item list-group-item-action"><i
-                        class="fas fa-caret-right pe-2"></i>Cras justo odio</a>
-                    <a href="" class="list-group-item list-group-item-action"><i
-                        class="fas fa-caret-right pe-2"></i>Adipiscing elit</a>
-                  </div>
-                </div>
-                <div class="col-md-6 col-xl-3">
-                  <div class="list-group list-group-flush">
-                    <p class="mb-0 list-group-item text-uppercase font-weight-bold">
-                      Cras justo odio
-                    </p>
-                    <a href="" class="list-group-item list-group-item-action"><i
-                        class="fas fa-caret-right pe-2"></i>Saepe</a>
-                    <a href="" class="list-group-item list-group-item-action"><i
-                        class="fas fa-caret-right pe-2"></i>Vel alias</a>
-                    <a href="" class="list-group-item list-group-item-action"><i
-                        class="fas fa-caret-right pe-2"></i>Sunt doloribus</a>
-                    <a href="" class="list-group-item list-group-item-action"><i
-                        class="fas fa-caret-right pe-2"></i>Cum dolores</a>
-                    <a href="" class="list-group-item list-group-item-action"><i
-                        class="fas fa-caret-right pe-2"></i>Perspiciatis quo</a>
-                    <a href="" class="list-group-item list-group-item-action"><i
-                        class="fas fa-caret-right pe-2"></i>Cras justo odio</a>
-                    <a href="" class="list-group-item list-group-item-action"><i
-                        class="fas fa-caret-right pe-2"></i>Laudantium maiores</a>
-                    <a href="" class="list-group-item list-group-item-action"><i
-                        class="fas fa-caret-right pe-2"></i>Provident dolor</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </li>
-      </ul>
-
-
-      <div class="input-group mx-2 mb-sm-3 pe-sm-3 mb-md-0">
-        <input type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="button-addon2">
-        <button class="btn btn-outline-secondary" type="button" id="button-addon2"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6"     style="width: 20px;">
-          <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
-        </svg>
-        </button>
+<!-- top navbar  -->
+<nav class="bg-light shadow d-none d-lg-block d-xl-block d-xxl-block">
+  <div class="row">
+    <div class="col-6 ">
+      <div class="col-6 bg-dark py-1">
+        <a href="#" class="text-decoration-none text-white d-flex" >
+          <p class="m-0 px-2 fw-bold">EXCLUSIVE T-SHIRTS ON SALE | Limited time only</p>          
+            <svg style="width:20px;" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 ">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3" />
+            </svg>  
+        </a>
       </div>
-      <div class=" me-4 d-none  d-lg-block">
-        <div class="d-flex">
-          <a class="btn btn-dark btn-sm me-2" href="#" role="button"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6" style="width: 30;">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z" />
-          </svg></a>
-          
-          <a type="button" class="btn btn-link btn-sm me-2 position-relative">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6"  style="width: 30;">
-              <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 00-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 00-16.536-1.84M7.5 14.25L5.106 5.272M6 20.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm12.75 0a.75.75 0 11-1.5 0 .75.75 0 011.5 0z" />
+    </div>
+    <div class="col-6  d-flex align-items-center ">
+      <div class="col-8 d-flex text-center  ">
+        <div class="col-6  bg-success py-1 m-0">
+          <a href="#" class="text-decoration-none text-white align-items-center">
+            <svg style="width: 20px; margin-bottom: 3px;" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 18.75a1.5 1.5 0 01-3 0m3 0a1.5 1.5 0 00-3 0m3 0h6m-9 0H3.375a1.125 1.125 0 01-1.125-1.125V14.25m17.25 4.5a1.5 1.5 0 01-3 0m3 0a1.5 1.5 0 00-3 0m3 0h1.125c.621 0 1.129-.504 1.09-1.124a17.902 17.902 0 00-3.213-9.193 2.056 2.056 0 00-1.58-.86H14.25M16.5 18.75h-2.25m0-11.177v-.958c0-.568-.422-1.048-.987-1.106a48.554 48.554 0 00-10.026 0 1.106 1.106 0 00-.987 1.106v7.635m12-6.677v6.677m0 4.5v-4.5m0 0h-12" />
             </svg>
-            <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger " style="font-size: 5px;">
-              99+                
-            </span>
+            Order Bulk
+          </a>
+        </div>
+        <div class="col-6  bg-secondary py-1 m-0 ms-1">
+          <a href="#" class="text-decoration-none text-white align-items-center">            
+            Bangladesh
+            <svg style="width: 20px; margin-bottom: 3px;"  xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 13.5L12 21m0 0l-7.5-7.5M12 21V3" />
+            </svg>            
           </a>
         </div>
       </div>
-      
+
+
+      <div class="col-4 d-flex justify-content-around">
+        <a href="#" class="text-decoration-none ms-2">
+          <svg style="width: 20px; margin-bottom: 3px;" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M9.879 7.519c1.171-1.025 3.071-1.025 4.242 0 1.172 1.025 1.172 2.687 0 3.712-.203.179-.43.326-.67.442-.745.361-1.45.999-1.45 1.827v.75M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-9 5.25h.008v.008H12v-.008z" />
+          </svg>
+          Help
+        </a>
+        <div class="login_dropdown">
+          <a class="login_dropbtn" href="#">
+            <svg style="width: 20px; margin-bottom: 3px;" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 9V5.25A2.25 2.25 0 0013.5 3h-6a2.25 2.25 0 00-2.25 2.25v13.5A2.25 2.25 0 007.5 21h6a2.25 2.25 0 002.25-2.25V15m3 0l3-3m0 0l-3-3m3 3H9" />
+            </svg>
+            Login
+          </a>
+          <div class="log_dropdown-content">
+            <a href="#">Login</a>
+            <a href="#">Register</a>
+            <a href="#">Order Tracking</a>
+          </div>
+        </div>
+      </div>
+        
+    </div>
+  </div>
+
+  <div class="container-fluid row py-3 bg-white">
+    <div class="col-4 d-flex justify-content-around align-items-center">
+      <img class="ms-2 " src="assets/img/fabrilife.svg" alt="logo" style="width: 125px;height: 25px;">
+      <!-- mega menu  -->
+      <div class="mega-menu">        
+        <div class="mega_dropdown">
+          <a class="mega_dropbtn" href="#">
+            Shop
+            <svg style="width: 20px; margin-bottom: 3px;" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+            </svg>
+            
+          </a>
+          <div class="mega_dropdown-content mt-3 p-2 rounded-bottom">
+            <div class="row">
+              <div class="col">
+                <h6 class="header">MENS</h6>
+                <a class="data link-hover ps-0" href="#">T-shirt</a>
+                <a class="data link-hover ps-0" href="#">T-shirt (Raglan)</a>
+                <a class="data link-hover ps-0" href="#">T-shirt (Cut & Stitch)</a>
+                <a class="data link-hover ps-0" href="#">T-shirt (Sports Edition)</a>
+                
+              </div>
+              <div class="col">
+                <h6 class="header">WOMENS</h6>
+                <a class="data link-hover ps-0" href="#">Kurti, Tunic & Tops</a>
+                <a class="data link-hover ps-0" href="#">Comfy Trouser</a>
+                <a class="data link-hover ps-0" href="#">T-shirt</a>
+              </div>
+              <div class="col">
+                <h6 class="header">FACE MASK</h6>
+                <a class="data link-hover ps-0" href="#">Professional 7 Layer Mask</a>
+                <a class="data link-hover ps-0" href="#">Sports Edition</a>
+                <a class="data link-hover ps-0" href="#">Womens Designer Edition</a>
+                <a class="data link-hover ps-0" href="#">Kids Face Mask</a>
+              </div>
+              <div class="col">
+                <h6 class="header">SPORTS</h6>
+                <a class="data link-hover ps-0" href="#">Professional 7 Layer Mask</a>
+                <a class="data link-hover ps-0" href="#">Sports Edition</a>
+                <a class="data link-hover ps-0" href="#">Womens Designer Edition</a>
+                <a class="data link-hover ps-0" href="#">Kids Face Mask</a>
+              </div>
+              <div class="col">
+                <h6 class="header">SPORTS</h6>
+                <a class="data link-hover ps-0" href="#">Professional 7 Layer Mask</a>
+                <a class="data link-hover ps-0" href="#">Sports Edition</a>
+                <a class="data link-hover ps-0" href="#">Womens Designer Edition</a>
+                <a class="data link-hover ps-0" href="#">Kids Face Mask</a>
+              </div>
+            </div>
+
+
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+    <div class="col-8 d-flex">
+      <div class="col-8">
+        <div class="search-container w-100 ">
+          <input type="text" class="search-input w-100" placeholder="Search...">
+          <button class="search-button">
+            <svg style="width: 20px;" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
+            </svg>
+            
+          </button>
+        </div>
+        
+      </div>
+      <div class="col-4 d-flex justify-content-around align-items-center">
+        <a href="#" class="text-decoration-none link-hover">
+          <svg style="width: 25px;" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z" />
+          </svg>          
+        </a>
+
+        <a class="text-decoration-none me-3" href="#">
+          <svg style="width: 20px;" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 00-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 00-16.536-1.84M7.5 14.25L5.106 5.272M6 20.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm12.75 0a.75.75 0 11-1.5 0 .75.75 0 011.5 0z" />
+          </svg>  
+          <span class="badge bg-primary">0</span>
+        </a>
+      </div>
+    </div>
+
+  </div>
+
+</nav>
+
+
+<!-- top navbar end -->
+<!-- second navbar start -->
+<nav id="mobile-nav" class="navbar bg-light shadow sticky-top  d-sm-block d-md-block d-lg-none d-xl-none">
+  <div class="container-fluid">  
+    
+      <!-- left elements -->
+      <div class="d-flex align-items-center">
+        <button class="btn btn-sm border-1" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling"><svg style="width: 25px;"  xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+        </svg>
+        </button>
+        <img class="ms-2 " src="assets/img/fabrilife.svg" alt="logo" style="width: 125px;height: 25px;">
+      </div>
+      <!-- right elements -->      
+    
+    <div class="d-flex align-items-center ">
+      <a class="text-decoration-none me-3 " href="#"  ><svg style="width: 20px;" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 ">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
+      </svg>
+      </a>
+
+      <a class="text-decoration-none me-3" href="#">
+        <svg style="width: 20px;" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z" />
+        </svg>        
+      </a>
+      <a class="text-decoration-none me-3" href="#">
+        <svg style="width: 20px;" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 00-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 00-16.536-1.84M7.5 14.25L5.106 5.272M6 20.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm12.75 0a.75.75 0 11-1.5 0 .75.75 0 011.5 0z" />
+        </svg>  
+        <span class="badge bg-primary">0</span>
+      </a>
+       
+    </div>
+
+    <div class="offcanvas offcanvas-start shadow-sm bg-light" style="margin-top: 55px; max-width: 350px;" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
+      <div class="offcanvas-header">
+        <h4 class="offcanvas-title" id="offcanvasScrollingLabel">Categories</h4>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        <!-- collapse 1 -->
+        <div class="d-flex justify-content-between" data-bs-toggle="collapse" href="#Mens" role="button" aria-expanded="false" aria-controls="Mens">
+          <span class="fw-bold" >
+            Mens
+          </span>
+          <span>
+            <svg style="width: 20px;" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 5.25l-7.5 7.5-7.5-7.5m15 6l-7.5 7.5-7.5-7.5" />
+            </svg>
+            
+          </span>
+        </div>
+        <div class="collapse ms-2" id="Mens">
+          <ul>
+            <li><a href="#">Show All</a></li>
+            <li><a href="#">Half Sleeve T-shirt</a></li>
+            <li><a href="#">Full Sleeve T-shirt</a></li>
+            <li><a href="#">Maggie</a></li>
+            <li><a href="#">Polo T-shirt</a></li>
+            <li><a href="#">Comfy Trouser</a></li>
+            <li><a href="#">Sports Trouser</a></li>
+          </ul>
+        </div>
+        <!-- collapse 2 -->
+        <div class="d-flex justify-content-between mt-2" data-bs-toggle="collapse" href="#Womens" role="button" aria-expanded="false" aria-controls="Womens">
+          <span class="fw-bold" >
+            Womens
+          </span>
+          <span>
+            <svg style="width: 20px;" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 5.25l-7.5 7.5-7.5-7.5m15 6l-7.5 7.5-7.5-7.5" />
+            </svg>
+            
+          </span>
+        </div>
+        <div class="collapse ms-2" id="Womens">
+          <ul>
+            <li><a href="#">Show All</a></li>
+            <li><a href="#">Half Sleeve T-shirt</a></li>
+            <li><a href="#">Full Sleeve T-shirt</a></li>
+            <li><a href="#">Maggie</a></li>
+            <li><a href="#">Polo T-shirt</a></li>
+            <li><a href="#">Comfy Trouser</a></li>
+            <li><a href="#">Sports Trouser</a></li>
+          </ul>
+        </div>
+         <!-- collapse 4 -->
+         <div class="d-flex justify-content-between mt-2" data-bs-toggle="collapse" href="#Sports" role="button" aria-expanded="false" aria-controls="Sports">
+          <span class="fw-bold" >
+            Sports
+          </span>
+          <span>
+            <svg style="width: 20px;" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 5.25l-7.5 7.5-7.5-7.5m15 6l-7.5 7.5-7.5-7.5" />
+            </svg>
+            
+          </span>
+        </div>
+        <div class="collapse ms-2" id="Sports">
+          <ul>
+            <li><a href="#">Show All</a></li>
+            <li><a href="#">Half Sleeve T-shirt</a></li>
+            <li><a href="#">Full Sleeve T-shirt</a></li>
+            <li><a href="#">Maggie</a></li>
+            <li><a href="#">Polo T-shirt</a></li>
+            <li><a href="#">Comfy Trouser</a></li>
+            <li><a href="#">Sports Trouser</a></li>
+          </ul>
+        </div>
+         <!-- collapse 3 -->
+         <div class="d-flex justify-content-between mt-2" data-bs-toggle="collapse" href="#FaceMask" role="button" aria-expanded="false" aria-controls="FaceMask">
+          <span class="fw-bold" >
+            Face Mask
+          </span>
+          <span>
+            <svg style="width: 20px;" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 5.25l-7.5 7.5-7.5-7.5m15 6l-7.5 7.5-7.5-7.5" />
+            </svg>
+            
+          </span>
+        </div>
+        <div class="collapse ms-2" id="FaceMask">
+          <ul>
+            <li><a href="#">Show All</a></li>
+            <li><a href="#">Half Sleeve T-shirt</a></li>
+            <li><a href="#">Full Sleeve T-shirt</a></li>
+            <li><a href="#">Maggie</a></li>
+            <li><a href="#">Polo T-shirt</a></li>
+            <li><a href="#">Comfy Trouser</a></li>
+            <li><a href="#">Sports Trouser</a></li>
+          </ul>
+        </div>
+
+
+      </div>
     </div>
   </div>
 </nav>
@@ -1469,5 +1550,6 @@
   <script src="js/jquery.js"></script>
   <script src="js/vendor/modernizr-3.12.0.min.js"></script>
   <script src="js/app.js"></script>
+  <script src="assets/js/navbar.js"></script>
 </body>
 </html>

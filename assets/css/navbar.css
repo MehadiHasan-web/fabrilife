@@ -1,0 +1,119 @@
+.login_dropbtn {
+    /* background-color: #04AA6D; */
+    color: rgb(168, 57, 57);
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+  }
+  
+  .login_dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .log_dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 5;
+  }
+  
+  .log_dropdown-content a {
+    color: black;
+    padding:3px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .log_dropdown-content a:hover {background-color: #ddd;}
+  
+  .login_dropdown:hover .log_dropdown-content {display: block;}
+  
+  .login_dropdown:hover .login_dropbtn {background-color: #cfefd0;}
+
+  /* mega menu  */
+
+  .mega_dropbtn {
+    /* background-color: #04AA6D; */
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+  }
+  
+  .mega_dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .mega_dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 5;
+    min-width: 100vh;
+    transition: all 2s ease;
+  }
+  
+  .mega_dropdown-content a {
+    color: black;
+    padding:3px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .mega_dropdown-content a:hover {background-color: #ddd;}
+  
+  .mega_dropdown:hover .mega_dropdown-content {display: block;}
+  
+  /* .mega_dropdown:hover .mega_dropbtn {background-color: #cfefd0;} */
+
+.link-hover:hover{
+  color: rgb(27, 74, 144);
+}
+
+/* search  */
+.search-container {
+  position: relative;
+  display: inline-block;
+}
+
+.search-input {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  outline: none;
+}
+
+.search-button {
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 8px;
+  border: none;
+  background-color: #f2f2f2;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Font Awesome is used for the search icon */
+.fa-search {
+  font-size: 16px;
+}
+/* mobile nav  */
+#mobile-nav{
+  display: none;
+}
+@media (max-width: 991px) {
+  #mobile-nav{
+    display: block;
+  }
+}
+@media (max-width: 1200px) {
+  #mobile-nav{
+    display: none;
+  }
+}
+
