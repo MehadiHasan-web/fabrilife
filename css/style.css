@@ -543,10 +543,11 @@ color: #009E8F;
   color: #53B2E9;
   text-decoration: underline;
 } 
-.btn_social{
+.btn_social {
   background: #014C8C;
   color: var(--white);
   position: relative;
+  padding: 4px 0px;
 }
 .btn_social a{
   background: #014C8C;
@@ -578,6 +579,11 @@ color: #009E8F;
 }
 .btn_social a:hover{
   color: var(--white);
+}
+.btn {
+  line-height: 1rem;
+  border: 0px;
+  border-radius: 0rem;
 }
 /* sign_content */
 
