@@ -53,11 +53,27 @@
   @media (min-width: 576px) and (max-width: 767px) {
     
     /* CSS */
-   /* .banner_part{
-    justify-content: center;
-    align-items: center;
-    display: flex;
-   } */
+    .mens_full_sleeve{
+      position: relative;
+    }
+    .product_content {
+      position: absolute;
+      bottom: -132px;
+      width: 100%;
+      font-size: 1.3rem;
+      color: #ffffff;
+      text-align: center;
+      background: linear-gradient(0deg, rgb(0 0 0 / 60%) 0%, rgb(0 0 0 / 45%) 30%, rgb(0 0 0 / 16%) 66%, rgb(0 0 0 / 0%) 100%);
+      height: 75px;
+      line-height: 100px;
+      font-family: 'Fjalla One', sans-serif;
+      /* display: none; */
+    }
+
+    .product_img{
+      width: 50%;
+      height: 100px;
+    }
 
 
     

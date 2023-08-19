@@ -320,7 +320,7 @@ textarea {
 
 }
 .flex-cat-button a {
-   background: var(--white);
+  background: var(--white);
   padding: 4px 10px;
   font-size: 0.7rem;
   font-weight: 500;
@@ -376,7 +376,7 @@ textarea {
   border-radius: 0px;
   color: #fff;
   font-size: 17px;
-  padding: 5 px 10px;
+  padding: 5px 10px;
   display: inline-block;
 }
 .search_box button:hover{
@@ -405,11 +405,26 @@ textarea {
   width: 100%;
 }
 .product_name P{
-  font-size: 25px;
-  font-weight: 500;
-  margin-top: -28px;
-  color: #fff;
+  font-family: 'Fjalla One', sans-serif;
 }
+.mens_full_sleeve{
+  position: relative;
+}
+.product_content {
+  position: absolute;
+  bottom: -185px;
+  width: 100%;
+  font-size: 1.3rem;
+  color: #ffffff;
+  text-align: center;
+  background: linear-gradient(0deg, rgb(0 0 0 / 60%) 0%, rgb(0 0 0 / 45%) 30%, rgb(0 0 0 / 16%) 66%, rgb(0 0 0 / 0%) 100%);
+  height: 75px;
+  line-height: 100px;
+  font-family: 'Fjalla One', sans-serif;
+  /* display: none; */
+}
+
+/* mens_full_leeve T_shirt_section_started */
 .product_hero img{
   width: 100%;
 }
@@ -418,19 +433,50 @@ textarea {
 }
 .product_prices{
   position: absolute;
-  background: #fff;
-  display: block;
-  text-align: center;
-  padding: 0 10px;
-  border-radius: 5px;
-  margin-top: -15px;
-  font-size: 12px;
- margin-left: 27px;
+  cursor: pointer;
+  width: 100%;
+  text-align: center !important;
+  bottom: 0px;
 }
-/* mens_full_leeve T_shirt_section_started */
+.product_prices p{
+  background: var(--white);
+  padding: 4px 10px;
+  font-size: 0.7rem;
+  font-weight: 500;
+  border-radius: 10px 10px 0px 0px;
+  box-shadow: 0 5px 15px 0 rgba(37,44,97,.15), 0 2px 4px 0 rgba(93,100,148,.2);
+  font-size: 12px;
+  text-align: center;
+  background: white;
+  color: #000;
+  padding: 0px 7px;
+  width: fit-content;
+  margin: 0 auto;
+} 
+.product-link{
+  position: relative;
+}
+.mens_shorts_name{
+  position: absolute;
+  bottom: -17px;
+  width: 100%;
+  font-size: 1.3rem;
+  color: #ffffff;
+  text-align: center;
+  background: linear-gradient(0deg, rgb(0 0 0 / 60%) 0%, rgb(0 0 0 / 45%) 30%, rgb(0 0 0 / 16%) 66%, rgb(0 0 0 / 0%) 100%);
+  height: 75px;
+  line-height: 100px;
+  font-family: 'Fjalla One', sans-serif;
+}
+
 /* comfort */
 .comfort-heading{
   position: relative;
+ 
+}
+.comfort-heading h2{
+  font-size: 2.5rem;
+  font-family: 'Roboto', sans-serif; 
 }
 .comfort-heading h2 i{
   font-size: 60px;
@@ -439,21 +485,39 @@ textarea {
 }
 .comfort_img img{
   width: 100%;
+  height: 100%;
+  display: block;
 }
 /* comfort */
+
 /* printed_short_section */
+.product-link{
+  position: relative;
+}
+
 .printed_short_img img{
   width: 100%;
 }
-.printed_short_content p{
-  font-size: 22px;
-  font-weight: 700;
-  text-transform: uppercase;
-  margin-top: -28px;
-  color: #fff;
+
+.printed_content {
+  position: absolute;
+  bottom: -19px;
+  width: 100%;
+  font-size: 1.3rem;
+  color: #ffffff;
+  text-align: center;
+  background: linear-gradient(0deg, rgb(0 0 0 / 60%) 0%, rgb(0 0 0 / 45%) 30%, rgb(0 0 0 / 16%) 66%, rgb(0 0 0 / 0%) 100%);
+  height: 75px;
+  line-height: 100px;
   font-family: 'Fjalla One', sans-serif;
+  display: block;
 }
+
+
 /* printed_short_section */
+
+
+
 
 /* best_quality_heading */
 .best_quality_heading{
