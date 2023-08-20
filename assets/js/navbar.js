@@ -9,12 +9,10 @@ window.onscroll = function() {
         navbar.classList.remove('d-xl-none');
         navbar.style.display = "block";
       
-    //   navbar.classList.add("d-lg-block");
     } else {
         navbar.classList.add('d-lg-none');
         navbar.classList.add('d-xl-none');
       navbar.style.display = "none";
-    //   navbar.classList.add("d-lg-none");
     }
   }
   // popover
