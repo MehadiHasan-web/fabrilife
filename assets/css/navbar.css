@@ -37,14 +37,14 @@
 
   .mega_dropbtn {
     /* background-color: #04AA6D; */
-    padding: 16px;
+    
     font-size: 16px;
     border: none;
   }
 
   .mega_dropdown {
     display: inline-block;
-    
+    padding: 16px;    
   }
   
   .mega_dropdown-content {
