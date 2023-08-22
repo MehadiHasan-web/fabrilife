@@ -44,20 +44,25 @@
 
   .mega_dropdown {
     display: inline-block;
-    padding: 16px;    
+    padding: 16px 20px;    
   }
   
   .mega_dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #fefefe;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    display: none; 
+    position: absolute; 
+    margin-top: 240px; 
+    /* background-color: #fefefe; */
+    /* box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); */
     z-index: 1000;
-    min-width: 100vh;
+    min-width: 120vh;
     min-height: auto;
-    transition: all 2s ease;
+    transition: all 2s ease;     
   }
-  
+
+  .mega_dropdown-content .row{
+    background-color: #fefefe; 
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  }
   .mega_dropdown-content a {
     color: black;
     padding:3px 16px;
