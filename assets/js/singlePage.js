@@ -1,17 +1,39 @@
 // size selector 
-$(document).on("click"," .size-selector",function(e) {
-    let node = $(e.target);
-    $(" .size-selector").removeClass("size-selector-selected");
-    node.addClass("size-selector-selected");
-    alert('hi');
+document.addEventListener("click", function (e) {
+    if (e.target.classList.contains("size-selector")) {
+        let node = e.target;
+        let sizeSelectors = document.querySelectorAll(".size-selector");
+
+        for (let selector of sizeSelectors) {
+            selector.classList.remove("size-selector-selected");
+        }
+
+        node.classList.add("size-selector-selected");
+    }
 });
 
-$(document).on("click",".size-selector",function(e) {
-    let node = $(e.target);
-    $(".size-selector").removeClass("size-selector-selected");
-    node.addClass("size-selector-selected");
+// quantity 
 
-    productid = node.data("productid");
-    size = node.data("size");
-    $(".btnAddToCart").data("size", size);
+// Get the elements
+let minusButton = document.querySelector('.quantity-selector-minus');
+let plusButton = document.querySelector('.quantity-selector-plus');
+let quantitySpan = document.querySelector('.quantity');
+
+let quantity = 1;
+function updateQuantity() {
+    quantitySpan.value = quantity;
+}
+
+minusButton.addEventListener('click', function () {
+    if (quantity > 1) {
+        quantity--; 
+        updateQuantity();
+    }
 });
+
+plusButton.addEventListener('click', function () {   
+    quantity++; 
+    updateQuantity();
+});
+
+updateQuantity();

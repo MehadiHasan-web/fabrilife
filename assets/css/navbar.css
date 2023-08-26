@@ -122,3 +122,25 @@
     display: none;
   }
 }
+
+/* bnbbnbnbnbn */
+
+.home-element:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.home-element:nth-child(n+3) {
+  margin-top: 60px;
+}
+
+.home-product {
+  border-radius: 5px;
+  box-shadow: 0 7px 15px 0 rgb(0 0 0 / 13%), 0 1px 4px 0 rgb(0 0 0 / 11%);
+  text-decoration: none;
+  position: relative;
+}
+.home-element {
+  overflow-x: hidden;
+  overflow-y: clip;
+}
