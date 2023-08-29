@@ -40,12 +40,12 @@ input:focus {
     box-shadow: none !important;
     border-radius: none !important;
 }
-a:focus,
+/* a:focus,
 .btn:focus {
     text-decoration: none;
     outline: none;
     box-shadow: none !important;
-}
+} */
 img{
   vertical-align: middle;
 }
@@ -580,11 +580,11 @@ color: #009E8F;
 .btn_social a:hover{
   color: var(--white);
 }
-.btn {
+/* .btn {
   line-height: 1rem;
   border: 0px;
   border-radius: 0rem;
-}
+} */
 /* sign_content */
 
 
