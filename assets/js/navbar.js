@@ -16,3 +16,11 @@ window.onscroll = function() {
     }
   }
   // popover
+  // mobile search show 
+  let search_btn = document.getElementById('search_btn');
+  let search_dev = document.getElementById('search_dev');
+
+
+  search_btn.addEventListener('click', function(){
+    search_dev.classList.toggle("d-sm-block");
+  })
