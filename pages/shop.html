@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="../assets/css/bootstrap.min.css">    
     <link rel="stylesheet" href="../assets/css/navbar.css">    
     <link rel="stylesheet" href="../assets/css/responsive.css">    
+    <link rel="stylesheet" href="../assets/css/flyimg.css">
     <link rel="stylesheet" href="../assets/css/shoping.css">
     
   </head>
@@ -1086,7 +1087,7 @@
                     </div>
                     <div class="modal-body">
                       <div class="d-flex">
-                        <div class="col-4">
+                        <div class="col-4 card1">
                           <p class="fw-bold">Mens Premium Designer Edition T Shirt -Youniverse</p>
                           <div class="position-relative overflow-hidden rounded" style="cursor: pointer;">
                             <img src="../assets/img/p1.jpg" class=" img-fluid product_img rounded shadow" alt="products" >
@@ -1109,12 +1110,17 @@
                     </div>
                     <div class="modal-footer">
                       <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                      <button type="button offcanvas-end" class="btn btn-primary" data-bs-toggle="offcanvas" data-bs-target="#hideadtocard" aria-controls="hideadtocard">Add To Card</button>
+                      <button type="button offcanvas-end" class="btn btn-primary add-to-cart"  data-bs-toggle="offcanvas" data-bs-target="#hideadtocard" aria-controls="hideadtocard">Add To Card</button>
                       
                     </div>
                   </div>
                 </div>
               </div>
+              <!-- fly img  -->
+              <div class="shopping-cart" data-product-count="0"></div>
+              <input type="hidden" class=" arrow left">
+              <input type="hidden" class="arrow right">
+              <!-- fly img end  -->
            <!-- product details model end -->          
           </div>
           <!-- products end -->
@@ -1331,7 +1337,8 @@
 
 
 
-<script src="../assets/js/navbar.js"></script>  
+<script src="../assets/js/navbar.js"></script> 
+<script src="../assets/js/flyimg.js"></script> 
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js" integrity="sha384-Rx+T1VzGupg4BHQYs2gCW9It+akI2MM/mndMCy36UVfodzcJcF0GGLxZIzObiEfa" crossorigin="anonymous"></script>
   </body>

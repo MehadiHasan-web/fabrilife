@@ -24,3 +24,4 @@ window.onscroll = function() {
   search_btn.addEventListener('click', function(){
     search_dev.classList.toggle("d-sm-block");
   });
+// move image 
