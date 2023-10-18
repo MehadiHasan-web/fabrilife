@@ -1,0 +1,809 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <title>CORE || Login</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta property="og:title" content="">
+  <meta property="og:type" content="">
+  <meta property="og:url" content="">
+  <meta property="og:image" content="">
+  <!-- favicon     -->
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+  <!-- style  -->
+  
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../assets/css/style.css">
+
+  <style>
+    .payment-method-selector{
+      margin-left: 0px;
+    padding-left: 0px;
+    margin-top: 10px;
+    line-height: 60px;
+    width: 180px;
+    padding: 5px;
+    border-radius: 5px;
+    height: 75px;
+    border: 1px solid #ffffff;
+    transition: .3s ease;
+    box-shadow: 0px 0px 5px 0px #9f9f9f;
+    max-width: 48%;
+    }
+    .form-check-inline{
+      position: relative;
+    display: inline-block;
+    padding-left: 1rem;
+    margin-bottom: 0;
+    vertical-align: middle;
+    cursor: pointer;
+    }
+    .form-check-label{
+      padding-left: 1.25rem;
+    margin-bottom: 0;
+    cursor: pointer;
+    }
+    .payment-method-logo{
+      position: absolute;
+    width: 80%;
+    top: calc(50% - 22px);
+    /* left: 26px; */
+    }
+    .payment-method-radio{
+      position: relative;
+    }
+  </style>
+
+</head>
+<body>
+
+    <!-- top navbar  -->
+    <nav class="bg-light shadow d-none d-lg-block d-xl-block d-xxl-block overflow-hidden">
+      <div class="row">
+        <div class="col-6 ">
+            <div class="bg-dark d-table" style="height: 100%;background-clip: text">
+              <a href="#" class="text-decoration-none text-white d-flex mt-1 pe-2" >
+                <p class="m-0 px-2 fw-bold ">EXCLUSIVE T-SHIRTS ON SALE | Limited time only</p>          
+                  <svg style="width:20px;" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 ">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3" />
+                  </svg>  
+              </a>
+          </div>
+        </div>
+        <div class="col-6  d-flex align-items-center ">
+          <div class="col-8 d-flex text-center  ">
+            <div class="col-6  bg-success py-1 m-0">
+              <a href="#" class="text-decoration-none text-white align-items-center">
+                <svg style="width: 20px; margin-bottom: 3px;" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 18.75a1.5 1.5 0 01-3 0m3 0a1.5 1.5 0 00-3 0m3 0h6m-9 0H3.375a1.125 1.125 0 01-1.125-1.125V14.25m17.25 4.5a1.5 1.5 0 01-3 0m3 0a1.5 1.5 0 00-3 0m3 0h1.125c.621 0 1.129-.504 1.09-1.124a17.902 17.902 0 00-3.213-9.193 2.056 2.056 0 00-1.58-.86H14.25M16.5 18.75h-2.25m0-11.177v-.958c0-.568-.422-1.048-.987-1.106a48.554 48.554 0 00-10.026 0 1.106 1.106 0 00-.987 1.106v7.635m12-6.677v6.677m0 4.5v-4.5m0 0h-12" />
+                </svg>
+                Order Bulk
+              </a>
+            </div>
+            <div class="col-6  bg-secondary py-1 m-0 ms-1">
+              <a href="#" class="text-decoration-none text-white align-items-center">            
+                Bangladesh
+                <svg style="width: 20px; margin-bottom: 3px;"  xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 13.5L12 21m0 0l-7.5-7.5M12 21V3" />
+                </svg>            
+              </a>
+            </div>
+          </div>
+    
+    
+          <div class="col-4 d-flex justify-content-around">
+            <a href="#" class="text-decoration-none ms-2" style="display: contents;">
+              <svg style="width: 20px; margin-bottom: 3px;" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M9.879 7.519c1.171-1.025 3.071-1.025 4.242 0 1.172 1.025 1.172 2.687 0 3.712-.203.179-.43.326-.67.442-.745.361-1.45.999-1.45 1.827v.75M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-9 5.25h.008v.008H12v-.008z" />
+              </svg>
+              Help
+            </a>
+            <div class="login_dropdown">
+              <a class="login_dropbtn" href="#" style="display: contents;">
+                <svg style="width: 20px; margin-bottom: 3px;" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 9V5.25A2.25 2.25 0 0013.5 3h-6a2.25 2.25 0 00-2.25 2.25v13.5A2.25 2.25 0 007.5 21h6a2.25 2.25 0 002.25-2.25V15m3 0l3-3m0 0l-3-3m3 3H9" />
+                </svg>
+                Login
+              </a>
+              <div class="log_dropdown-content">
+                <a href="login.html">Login</a>
+                <a href="register.html">Register</a>
+                <a href="#">Order Tracking</a>
+              </div>
+            </div>
+          </div>
+            
+        </div>
+      </div>
+    
+      <div class="container-fluid row py-3 bg-white">
+        <div class="col-4 d-flex justify-content-around align-items-center">
+          <img class="ms-2 " src="../assets/img/logo.png" alt="logo" style="width: 125px;height: 35px;">
+          <!-- mega menu  -->
+          <div class="mega-menu ">        
+            <div class="mega_dropdown">
+              <a class="mega_dropbtn text-decoration-none" href="#">
+                Shop
+                <svg style="width: 20px; margin-bottom: 3px; margin-top: 1px;" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+                </svg>
+                
+              </a>
+              <div class="mega_dropdown-content  pt-4 rounded-bottom pb-0 " >            
+                <div class="d-flex justify-content-center ">
+                  <div class=" ps-2  pt-2 text-dark" style="background-color: #fff!important;;">
+                    <h6 class="header">MENS</h6>
+                    
+                    <a class=" link-hover ps-0 " href="#">T-shirt (Sports Edition)</a>
+                    <a class=" link-hover ps-0 " href="#">T-shirt (Sports Edition)</a>
+                    <a class=" link-hover ps-0 " href="#">T-shirt (Sports Edition)</a>
+                    
+                  </div>
+                  <div class=" ps-2  pt-2 pb-5 text-dark" style="background-color: #f7f7f7">
+                    <h6 class="header">WOMENS</h6>
+                    <a class="data link-hover ps-0" href="#">Kurti, Tunic & Tops</a>
+                    <a class="data link-hover ps-0" href="#">Comfy Trouser</a>
+                    <a class="data link-hover ps-0" href="#">T-shirt</a>
+                  </div>
+                  <div class=" ps-2  pt-2 pb-5 text-dark" style="background-color: #fff!important;;">
+                    <h6 class="header">FACE MASK</h6>
+                    <a class="data link-hover ps-0" href="#">Professional 7 Layer Mask</a>
+                    <a class="data link-hover ps-0" href="#">Sports Edition</a>
+                    <a class="data link-hover ps-0" href="#">Womens Designer Edition</a>
+                    <a class="data link-hover ps-0" href="#">Kids Face Mask</a>
+                  </div>
+                  <div class=" ps-2  pt-2 pb-5 text-dark" style="background-color: #f7f7f7">
+                    <h6 class="header">SPORTS</h6>
+                    <a class="data link-hover ps-0" href="#">Professional 7 Layer Mask</a>
+                    <a class="data link-hover ps-0" href="#">Sports Edition</a>
+                    <a class="data link-hover ps-0" href="#">Womens Designer Edition</a>
+                    <a class="data link-hover ps-0" href="#">Kids Face Mask</a>
+                  </div>
+                  <div class=" ps-2  pt-2 pb-5 text-dark" style="background-color: #fff!important;;">
+                    <h6 class="header">SPORTS</h6>
+                    <a class="data link-hover ps-0" href="#">Professional 7 Layer Mask</a>
+                    <a class="data link-hover ps-0" href="#">Sports Edition</a>
+                    <a class="data link-hover ps-0" href="#">Womens Designer Edition</a>
+                    <a class="data link-hover ps-0" href="#">Kids Face Mask</a>
+                  </div>             
+                  <div class=" ps-2  pt-2 pb-5 text-dark" style="background-color: #f7f7f7">
+                    <h6 class="header">SPORTS</h6>
+                    <a class="data link-hover ps-0" href="#">Professional 7 Layer Mask</a>
+                    <a class="data link-hover ps-0" href="#">Sports Edition</a>
+                    <a class="data link-hover ps-0" href="#">Womens Designer Edition</a>
+                    <a class="data link-hover ps-0" href="#">Kids Face Mask</a>
+                  </div> 
+                
+
+                  
+                </div>
+              </div>
+            </div>
+
+
+          </div>
+          <!-- mega menu end  -->
+        </div>
+        <div class="col-8 d-flex">
+          <div class="col-8 d-flex align-items-center">
+            <div class="search-container w-100  ">
+              <input type="text" class="search-input w-100 position-relative" placeholder="Search...">
+              <div class="position-absolute top-50 start-100 translate-middle">
+                <svg style="width: 20px;" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 me-5 ">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
+                </svg>
+                
+              </div>
+            </div>
+            
+          </div>
+          <div class="col-4 d-flex justify-content-around align-items-center">
+            <a href="#" class="text-decoration-none link-hover">
+              <svg style="width: 25px;" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z" />
+              </svg>          
+            </a>
+    
+            <a class="text-decoration-none me-3" href="#">
+              <svg style="width: 20px;" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 00-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 00-16.536-1.84M7.5 14.25L5.106 5.272M6 20.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm12.75 0a.75.75 0 11-1.5 0 .75.75 0 011.5 0z" />
+              </svg>  
+              <span class="badge bg-primary">0</span>
+            </a>
+          </div>
+        </div>
+    
+      </div>
+    
+    </nav>
+    <!-- top navbar end -->
+    
+    
+      <!-- second navbar start -->
+      <nav id="mobile-nav" class="navbar bg-light shadow sticky-top d-block  d-sm-block d-md-block d-lg-none d-xl-none " >
+        <div class="container-fluid">  
+          
+            <!-- left elements -->
+            <div class="d-flex align-items-center">
+              <button class="btn btn-sm border-1" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling"><svg style="width: 25px;"  xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+              </svg>
+              </button>
+              <img class="ms-2 " src="../assets/img/logo.png" alt="logo" style="width: 125px;height: 35px;">
+            </div>
+            <!-- right elements -->      
+          
+          <div class="d-flex align-items-center ">
+            <a class="text-decoration-none me-3 " href="#"  ><svg style="width: 20px;" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 ">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
+            </svg>
+            </a>
+      
+            <a class="text-decoration-none me-3" href="#">
+              <svg style="width: 20px;" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z" />
+              </svg>        
+            </a>
+            <a class="text-decoration-none me-3" href="#">
+              <svg style="width: 20px;" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 00-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 00-16.536-1.84M7.5 14.25L5.106 5.272M6 20.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm12.75 0a.75.75 0 11-1.5 0 .75.75 0 011.5 0z" />
+              </svg>  
+              <span class="badge bg-primary">0</span>
+            </a>
+    
+            <!-- Default dropstart button -->
+          <div class="btn-group dropstart">   
+     
+            <!-- login and track order button -->
+            <div class="btn-group dropstart">
+                <a href="#" class="text-decoration-none dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
+                    <svg style="width: 20px;" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 9V5.25A2.25 2.25 0 0013.5 3h-6a2.25 2.25 0 00-2.25 2.25v13.5A2.25 2.25 0 007.5 21h6a2.25 2.25 0 002.25-2.25V15m3 0l3-3m0 0l-3-3m3 3H9" />
+                    </svg>          
+                </a>
+                <!-- <button type="button" class="btn btn-secondary dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false"> -->
+                
+                </button>
+                <ul class="dropdown-menu" style="margin-top: 40px;margin-right: -28px;">
+                <li class="ms-2 "><a class="text-decoration-none " href="../login.html">Login</a></li>
+                <li class="ms-2 "><a class="text-decoration-none " href="../register.html">Track Order</a></li>
+                </ul>
+            </div>
+             
+          </div>
+          <!-- mobile offcanvas  -->
+          <div class="offcanvas offcanvas-start shadow-sm bg-light" style="margin-top: 55px; max-width: 350px;" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
+            <div class="offcanvas-header">
+              <h4 class="offcanvas-title" id="offcanvasScrollingLabel">Categories</h4>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">         
+          
+              <!-- accordion -->
+          <div class="accordion accordion-flush" id="accordionFlushExample">
+            <!-- item 1 -->
+            <div class="accordion-item">
+              <h2 class="accordion-header ">
+                <strong class="accordion-button btn-sm px-1 py-1 rounded border border-white " type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                  Man
+                </strong>
+              </h2>
+              <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show  p-0" data-bs-parent="#accordionFlushExample" >
+                <div class="accordion-body px-1 py-0" >
+                  <ul class="list-unstyled ps-2" >
+                    <li>
+                      <!-- nested items 1 -->
+                      <div class="accordion-item p-0">
+                        <h2 class="accordion-header ">
+                          <strong class="accordion-button collapsed  btn-sm ps-1   px-0 py-1 rounded border border-white" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStay-shirt" aria-expanded="false" aria-controls="panelsStay-shirt">
+                            Half Sleeve T-shirt
+                          </strong>
+                        </h2>
+                        <div id="panelsStay-shirt" class="accordion-collapse collapse px-0">
+                          <div class="accordion-body ps-2 py-0">
+                            <ul class="list-unstyled">
+                              <li><a class="text-decoration-none text-dark" href="#">Show All</a></li>
+                              <li><a class="text-decoration-none text-dark" href="#">Half Sleeve T-shirt</a></li>
+                              <li><a class="text-decoration-none text-dark" href="#">Maggie</a></li>
+                              <li><a class="text-decoration-none text-dark" href="#">Polo T-shirt</a></li>
+                              <li><a class="text-decoration-none text-dark" href="#">Comfy Trouser</a></li>
+                              <li><a class="text-decoration-none text-dark" href="#">Sports Trouser</a></li>
+                              <li><a class="text-decoration-none text-dark" href="#">Full Sleeve T-shirt</a></li>
+                              <li><a class="text-decoration-none text-dark" href="#">Maggie</a></li>
+                              <li><a class="text-decoration-none text-dark" href="#">Polo T-shirt</a></li>
+                              
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+
+                    </li>
+                    <li><a class="text-decoration-none text-dark ps-1" href="#">Half Sleeve T-shirt</a></li>
+                    <li><a class="text-decoration-none text-dark ps-1" href="#">Full Sleeve T-shirt</a></li>
+                    <li>
+                      <!-- nested items  2-->
+                      <div class="accordion-item p-0">
+                        <h2 class="accordion-header ">
+                          <strong class="accordion-button collapsed  btn-sm ps-1   px-0 py-1 rounded border border-white" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStay-maggie" aria-expanded="false" aria-controls="panelsStay-maggie">
+                            Maggie
+                          </strong>
+                        </h2>
+                        <div id="panelsStay-maggie" class="accordion-collapse collapse px-0">
+                          <div class="accordion-body ps-2 py-0">
+                            <ul class="list-unstyled">
+                              <li><a class="text-decoration-none text-dark" href="#">Show All</a></li>
+                              <li><a class="text-decoration-none text-dark" href="#">Half Sleeve T-shirt</a></li>
+                              <li><a class="text-decoration-none text-dark" href="#">Maggie</a></li>
+                              <li><a class="text-decoration-none text-dark" href="#">Polo T-shirt</a></li>
+                              <li><a class="text-decoration-none text-dark" href="#">Comfy Trouser</a></li>
+                              <li><a class="text-decoration-none text-dark" href="#">Sports Trouser</a></li>
+                              <li><a class="text-decoration-none text-dark" href="#">Full Sleeve T-shirt</a></li>
+                              <li><a class="text-decoration-none text-dark" href="#">Maggie</a></li>
+                              <li><a class="text-decoration-none text-dark" href="#">Polo T-shirt</a></li>
+                              
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    <li><a class="text-decoration-none text-dark ps-1" href="#">Polo T-shirt</a></li>
+                    
+                  </ul>
+                </div>
+              </div>
+            </div>
+             <!-- item 2 -->
+             <div class="accordion-item">
+              <h2 class="accordion-header ">
+                <strong class="accordion-button collapsed  btn-sm px-1 py-1 rounded border border-white collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStay-Womens" aria-expanded="false" aria-controls="panelsStay-Womens">
+                  Womens
+                </strong>
+              </h2>
+              <div id="panelsStay-Womens" class="accordion-collapse collapse p-0" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body px-1 py-0">
+                  <ul class="list-unstyled ps-2">
+                    <li>
+                      <!-- nested items 1 -->
+                      <div class="accordion-item p-0">
+                        <h2 class="accordion-header ">
+                          <strong class="accordion-button collapsed  btn-sm ps-1   px-0 py-1 rounded border border-white" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStay-Shorts" aria-expanded="false" aria-controls="panelsStay-Shorts">
+                            Shorts
+                          </strong>
+                        </h2>
+                        <div id="panelsStay-Shorts" class="accordion-collapse collapse px-0">
+                          <div class="accordion-body ps-2 py-0">
+                            <ul class="list-unstyled">
+                              <li><a class="text-decoration-none text-dark" href="#">Show All</a></li>
+                              <li><a class="text-decoration-none text-dark" href="#">Half Sleeve T-shirt</a></li>
+                              <li><a class="text-decoration-none text-dark" href="#">Maggie</a></li>
+                              <li><a class="text-decoration-none text-dark" href="#">Polo T-shirt</a></li>
+                              <li><a class="text-decoration-none text-dark" href="#">Comfy Trouser</a></li>
+                              <li><a class="text-decoration-none text-dark" href="#">Sports Trouser</a></li>
+                              <li><a class="text-decoration-none text-dark" href="#">Full Sleeve T-shirt</a></li>
+                              <li><a class="text-decoration-none text-dark" href="#">Maggie</a></li>
+                              <li><a class="text-decoration-none text-dark" href="#">Polo T-shirt</a></li>
+                              
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+
+                    </li>
+                    <li><a class="text-decoration-none text-dark ps-1" href="#">Half Sleeve T-shirt</a></li>
+                    <li><a class="text-decoration-none text-dark ps-1" href="#">Full Sleeve T-shirt</a></li>
+                    <li>
+                      <!-- nested items  2-->
+                      <div class="accordion-item p-0">
+                        <h2 class="accordion-header ">
+                          <strong class="accordion-button collapsed  btn-sm ps-1   px-0 py-1 rounded border border-white" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStay-Trouser" aria-expanded="false" aria-controls="panelsStay-Trouser">
+                            Comfy Trouser
+                          </strong>
+                        </h2>
+                        <div id="panelsStay-Trouser" class="accordion-collapse collapse px-0">
+                          <div class="accordion-body ps-2 py-0">
+                            <ul class="list-unstyled">
+                              <li><a class="text-decoration-none text-dark" href="#">Show All</a></li>
+                              <li><a class="text-decoration-none text-dark" href="#">Half Sleeve T-shirt</a></li>
+                              <li><a class="text-decoration-none text-dark" href="#">Maggie</a></li>
+                              <li><a class="text-decoration-none text-dark" href="#">Polo T-shirt</a></li>
+                              <li><a class="text-decoration-none text-dark" href="#">Comfy Trouser</a></li>
+                              <li><a class="text-decoration-none text-dark" href="#">Sports Trouser</a></li>
+                              <li><a class="text-decoration-none text-dark" href="#">Full Sleeve T-shirt</a></li>
+                              <li><a class="text-decoration-none text-dark" href="#">Maggie</a></li>
+                              <li><a class="text-decoration-none text-dark" href="#">Polo T-shirt</a></li>
+                              
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    <li><a class="text-decoration-none text-dark ps-1" href="#">Polo T-shirt</a></li>
+                    
+                  </ul>
+                </div>
+              </div>
+             </div>
+             <!-- item 3 -->
+             <li class="list-unstyled ms-1 fw-bold py-1 ms-0 bg-white border border-success border-start-0 border-end-0 border-opacity-10"><a href="#" class="text-dark text-bold text-decoration-none">Face Mask</a></li>
+             <!-- item 4 -->
+             <div class="accordion-item">
+              <h2 class="accordion-header ">
+                <strong class="accordion-button collapsed  btn-sm px-1 py-1 rounded border border-white" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStay-Kids" aria-expanded="false" aria-controls="panelsStay-Kids">
+                  Kids
+                </strong>
+              </h2>
+              <div id="panelsStay-Kids" class="accordion-collapse collapse p-0" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body px-1 py-0">
+                  <ul class="list-unstyled ps-2">
+                    <li>
+                      <!-- nested items 1 -->
+                      <div class="accordion-item p-0">
+                        <h2 class="accordion-header ">
+                          <strong class="accordion-button collapsed  btn-sm ps-1   px-0 py-1 rounded border border-white" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStay-Sleeve" aria-expanded="false" aria-controls="panelsStay-Sleeve">
+                            Half Sleeve T-shirt
+                          </strong>
+                        </h2>
+                        <div id="panelsStay-Sleeve" class="accordion-collapse collapse px-0">
+                          <div class="accordion-body ps-2 py-0">
+                            <ul class="list-unstyled">
+                              <li><a class="text-decoration-none text-dark" href="#">Show All</a></li>
+                              <li><a class="text-decoration-none text-dark" href="#">Half Sleeve T-shirt</a></li>
+                              <li><a class="text-decoration-none text-dark" href="#">Maggie</a></li>
+                              <li><a class="text-decoration-none text-dark" href="#">Polo T-shirt</a></li>
+                              <li><a class="text-decoration-none text-dark" href="#">Comfy Trouser</a></li>
+                              <li><a class="text-decoration-none text-dark" href="#">Sports Trouser</a></li>
+                              <li><a class="text-decoration-none text-dark" href="#">Full Sleeve T-shirt</a></li>
+                              <li><a class="text-decoration-none text-dark" href="#">Maggie</a></li>
+                              <li><a class="text-decoration-none text-dark" href="#">Polo T-shirt</a></li>
+                              
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+
+                    </li>
+                    <li><a class="text-decoration-none text-dark ps-1" href="#">Half Sleeve T-shirt</a></li>
+                    <li><a class="text-decoration-none text-dark ps-1" href="#">Full Sleeve T-shirt</a></li>
+                    <li>
+                      <!-- nested items  2-->
+                      <div class="accordion-item p-0">
+                        <h2 class="accordion-header ">
+                          <strong class="accordion-button collapsed  btn-sm ps-1   px-0 py-1 rounded border border-white" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStay-Polo" aria-expanded="false" aria-controls="panelsStay-Polo">
+                            Polo T-shirt
+                          </strong>
+                        </h2>
+                        <div id="panelsStay-Polo" class="accordion-collapse collapse px-0">
+                          <div class="accordion-body ps-2 py-0">
+                            <ul class="list-unstyled">
+                              <li><a class="text-decoration-none text-dark" href="#">Show All</a></li>
+                              <li><a class="text-decoration-none text-dark" href="#">Half Sleeve T-shirt</a></li>
+                              <li><a class="text-decoration-none text-dark" href="#">Maggie</a></li>
+                              <li><a class="text-decoration-none text-dark" href="#">Polo T-shirt</a></li>
+                              <li><a class="text-decoration-none text-dark" href="#">Comfy Trouser</a></li>
+                              <li><a class="text-decoration-none text-dark" href="#">Sports Trouser</a></li>
+                              <li><a class="text-decoration-none text-dark" href="#">Full Sleeve T-shirt</a></li>
+                              <li><a class="text-decoration-none text-dark" href="#">Maggie</a></li>
+                              <li><a class="text-decoration-none text-dark" href="#">Polo T-shirt</a></li>
+                              
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    <li><a class="text-decoration-none text-dark ps-1" href="#">Polo T-shirt</a></li>
+                    
+                  </ul>
+                </div>
+              </div>
+             </div>
+             <!-- item 3 -->
+             <li class="list-unstyled ms-1 fw-bold py-1 bg-white "><a href="#" class="text-dark text-bold text-decoration-none">Face Mask</a></li>
+          </div>
+      
+            </div>
+          </div>
+        </div>
+      </nav>
+
+<!-- navbar end  -->
+
+<div class="container">
+  <div class="row my-5">
+    <div class="col-12 col-sm-12 col-md-6 col-xl-6 col-xxl-6 mb-3">
+      <div class="px-2">
+        <h4 class="text-center">Checkout Info</h4>
+        <form class="mt-4">
+          <h6 class="mb-3">Contact Info</h6>
+          <div class="mb-3">
+            <input type="text" class="form-control" id="name" aria-describedby="name" placeholder="Full Name">
+            <div id="name" class="form-text text-danger ms-1">Error show</div>
+          </div>
+          <div class="row g-3">
+            <div class="col">
+              <input type="email" id="email" class="form-control" placeholder="Email" aria-label="Email">
+            </div>
+            <div class="col">
+              <input type="number" class="form-control" placeholder="Phone Number" aria-label="Number">
+            </div>
+          </div>
+
+          <div class="mt-5">
+            <h6 class="mb-3">Shipping Info</h6>
+            <div class="mb-3">
+              <input type="text" class="form-control" id="Detailed" aria-describedby="Detailed" placeholder="Detailed Address">
+              <div id="Detailed" class="form-text text-danger ms-1">Error show</div>
+            </div>
+            <div class="row g-3">
+              <div class="col">
+                <select class="form-select" aria-label=" select example" >
+                  <option selected>Select City</option>
+                  <option value="1">Dhaka</option>
+                  <option value="2">Chittagong</option>
+                  <option value="3">Bandorban</option>
+                </select>
+              </div>
+              <div class="col">
+                <input type="number" class="form-control" placeholder="Alt. Phone (01XXXXXXXXX)" aria-label="Number">
+              </div>
+            </div>
+            <div class="mt-3">
+              <input type="text" class="form-control" id="Detailed" aria-describedby="Detailed" placeholder="Note for Fabrilife (optional)">              
+            </div>
+          </div>
+
+
+        </form>
+
+        <!-- Your total payable amount is -->
+        <div class="p-2 shadow rounded mt-5">
+          <div class="d-flex justify-content-center">
+            <div class="my-2">
+              <p class="text-muted">Your total payable amount is</p>
+              <h2 class="text-center text-primary">৳ 495</h2>
+              <h5 class="text-center mt-2">Breakdown</h5>
+            </div>
+          </div>
+          <!-- table -->
+          <table class="table text-center ">
+            <thead>
+              <tr>                
+                <th scope="col">Purpose</th>
+                <th scope="col">Amount</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Total</td>
+                <td>৳435</td>
+              </tr>
+              <tr>
+                <td>Shipping</td>
+                <td>৳60</td>
+              </tr>
+            </tbody>
+          </table>
+          <p class="text-center">You will get the delivery <span class="text-success">within 2-3 Days</span> after confirmation.</p>
+        </div>
+        <!-- Payment Options -->
+        <div class="mt-5">
+          <h6>Payment Options</h6>
+          <div class="payment-container">
+            <div class="form-check form-check-inline payment-method-selector">
+              <label class="form-check-label">
+                <input class="form-check-input payment-method-radio" type="radio" name="payment_method"
+                  onclick="sslCOD()" required="" value="cod" checked="checked">
+                <img src="../assets/payment/cod-pay.png" class="payment-method-logo" alt="">
+              </label>
+            </div>
+
+            <div class="form-check form-check-inline payment-method-selector">
+              <label class="form-check-label">
+                <input class="form-check-input payment-method-radio" type="radio" name="payment_method"
+                  onclick="sslCard()" value="ssl_card">
+                <img src="../assets/payment/card-pay.png" class="payment-method-logo" alt="">
+              </label>
+            </div>
+
+            <div class="form-check form-check-inline payment-method-selector">
+              <label class="form-check-label">
+                <input class="form-check-input payment-method-radio" type="radio" name="payment_method"
+                  onclick="sslBkash()" value="bkash">
+                <img src="../assets/payment/64af92d32dde1.jpg" class="payment-method-logo" alt=""
+                  style="top: calc(50% - 20px); margin-top: -7px">
+                <!-- <div style="line-height: 10px;font-size: 16px;margin-top: -16px;font-weight: bold;margin-left: 15px;color: #cf2054;">
+                  10% Cashback
+                </div> -->
+              </label>
+            </div>
+            <div style="font-size: .8rem; margin: 10px 0px; font-style: italic;">
+              <strong>Note: </strong>bKash 10% Cashback upto BDT 100 with a minimum purchase of BDT 500
+            </div>
+          </div>
+        </div>
+        <div class="mt-6">
+          <h5>Got any Coupon Code?</h5>
+          <form class="row g-3 mt-2">
+           
+            <div class="col-auto">
+              <label for="text" class="visually-hidden">Password</label>
+              <input type="text" class="form-control" id="text" placeholder="Enter Coupon Code Here">
+            </div>
+            <div class="col-auto">
+              <button type="submit" class="btn btn-primary mb-3 w-100">Add Coupon</button>
+            </div>
+          </form>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+            <label class="form-check-label p-0" for="flexCheckDefault">
+               I agree to Terms & Conditions, Refund Policy and Privacy Policy of Fabrilife.
+            </label>
+          </div>
+          <button type="button" class="btn btn-primary mt-4 w-100">Confirm Order</button>
+        </div>
+      </div>
+    </div>
+    <div class="col-12 col-sm-12 col-md-6 col-xl-6 col-xxl-6 ">
+     <div class=" shadow px-5 py-4 rounded">
+       <div class="d-flex justify-content-between">
+        <h4>Cart Overview</h4>
+        <a class="text-decoration-none text-primary" href="#">Modify Order</a>       
+      </div>
+      <hr>
+      <div class="d-flex justify-content-between align-items-center">
+        <div>
+          <p class="text-muted">Sports Edition Shorts - Vortex  ( L)</p>
+          <div style="width: 70px;">
+            <img class="img-fluid" src="../assets/img/p1.jpg" alt="img">
+          </div>
+        </div>
+        <p>
+          <span>1&nbsp;</span>
+          <span class="multiply-sign">X</span>
+          <span style="color:#000">৳</span><span class="regular_price_field"
+            style="text-decoration: line-through;">485</span>&nbsp;
+          ৳ 435
+        </p>
+      </div>
+      <hr>
+      <div class="d-flex justify-content-between">
+        <h5>Total:</h5> 
+        <strong>৳ 435</strong>
+      </div>
+      <div class="d-flex justify-content-between mt-4">
+        <h5>Shipping (+):</h5> 
+        <strong>৳ 60</strong>
+      </div>
+      <hr>
+      <div class="d-flex justify-content-between mt-3">
+        <h5>Payable:</h5> 
+        <strong>৳ 495</strong>
+      </div>
+     </div>
+    </div>
+  </div>
+</div>
+
+
+
+ 
+
+  <!-- contact_section started---------------------------->
+  
+  <section class=" overflow contact_section pt-4 " style="background: #37383f;" >
+    <div class="container">
+       <div class="row">
+        <div class="col-md-6">
+          <div class="search_part">
+            <div class="search_part_heading">
+              <h6 style="color: #fff;"><i style="color: orange; font-size: 20px;" class='bx bxl-gmail me-2'></i>GET SPECIAL DISCOUNTS IN YOUR INBOX</h6>
+              <div class="search_box">
+               <input type="email" name="email" required placeholder="Enter email to get offers, discounts and more." >
+               <button class="btn btn-sm btn-warning "
+               type="submit">Subscribe</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+         <div class="contact_part">
+           <h6 style="color: #fff;" class="pb-2"><i style="color: orange; font-size: 20px ;" class='bx bxs-phone me-2'></i>FOR ANY HELP YOU MAY CALL US AT</h6>
+           <div style="text-align: left; color: #aaa; margin-left: 20px">
+            +8809677666888<br /> Open 24 Hours a Day, 7 Days a week
+          </div>
+         </div>
+        </div>
+       </div>
+    </div>
+  </section>
+
+   <!-- contact_section end-------------------------------->
+<!-- fooder_section_started ----------------------------------->
+<section class=" overflow fooder_section pt-4 pb-5" style="background: #58595b;">
+ <div class="container">
+  <div class="row">
+   <div class="col-md-3">
+   <div class="fooder_heading">
+    <h4> FABRILIFE</h4>
+    <ul class="pt-4 fabrlife_menu">
+        <li class="sub-item-list"><a href="#">ABOUT US</a></li>
+          <li><a href="#">TERMS & CONDITIONS</a></li>
+           <li><a href="#">PRIVACY POLICY</a></li>
+          <li><a href="#">CANCELLATION & RETURN
+        POLICY</a></li>
+        <li><a href="#">FAQS</a></li>
+        <li><a href="#">CONTACT US</a></li>
+      </ul>
+     </div>  
+   </div>
+   <div class="col-md-3">
+   <div class="fooder_heading_01">
+     <h4 style="color: #fff">MEN</h4>
+     <ul class="men_menu pt-4">
+       <li><a href="#">SHORT SLEEVE</a></li>
+         <li><a href="#">LONG SLEEVE</a></li>
+          <li><a href="#">POLO</a></li>
+          <li><a href="#">SHIRT</a></li>
+          <li><a href="#">HOODIE</a></li>
+         <li><a href="#">COMFY TROUSER</a></li>
+       <li><a href="#">SPORTS TROUSER</a></li>
+      </ul>
+    </div>
+   </div>
+   <div class="col-md-3">
+     <div class="fooder_heading_02">
+       <h4 style="color: #fff;">W0MEN</h4>
+       <ul class="women pt-4">
+         <li><a href="">COMFY TROUSER</a></li>
+         <span style="color: #fff; font-weight: bold; font-size: 16px; ">FACE MASK</span>
+         <li><a href="">CLASSIC</a></li>
+         <li><a href="">DESIGNER EDITION</a></li>
+         <li><a href="">KIDS MASK</a></li>
+         <span style="color: #fff; font-weight: bold;  font-size: 16px;">FACE MASK</span>
+         <li><a href="">JERSEY</a></li>
+       </ul>
+     </div>
+   </div>
+   <div class="col-md-3">
+     <div class="fooder_heading_03">
+      <h4 style="color: #fff;">KIDS</h4>
+       <ul class="kids_menu pt-4">
+         <li><a href="#">MAGGIE</a></li>
+         <li><a href="#">SHORT SLEEVE</a></li>
+         <li><a href="#">LONG SLEEVE</a></li>
+         <li><a href="#">SHORTS</a></li>
+         <li><a href="#">TROUSER</a></li>
+       </ul>
+     </div>
+   </div>
+  </div>
+ </div>
+</section>
+<!-- fooder_section_end------ ----------------------------------->
+
+<!-- fooder-section start------------------------------------------------>
+  <section class="overflow coyright_section">
+   <div class="container">
+     <div class="row">
+      <div class="col-md-12">
+        <div class="coyright_part">
+          <div class="coyright_heading">
+           <p>FABRILIFE prints a huge variety of custom clothing like T-shirts, hoodies and more. Your order is
+            handled daily with a lot of ❤️️ from BANGLADESH and <span class="worldwide">delivered worldwide!</span></p>
+            <p class="coyright pt-4 pb-2">Copyright © 2018 Fabrilife Limited. All Right Reserved</p>
+          </div>
+        </div>
+      </div>
+     </div>
+   </div>
+  </section>
+<!-- fooder-section end------------------------------------------------>
+  <script src="../assets/js/jquery-3.7.0.min.js"></script>
+  <script src="../assets/js/bootstrap.bundle.min.js"></script>
+  <script src="../assets/js/navbar.js"></script>
+</body>
+</html>
